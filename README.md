@@ -134,7 +134,8 @@
 
     <h3>Brandy</h3>
     <div class="product">
-        <img src="brandy-torres10.jpg" alt="Torres 10">
+        <img src="![image](https://github.com/user-attachments/assets/926ba5e2-5d26-4d60-b343-5d9c7d0e6e5f)
+" alt="Torres 10">
         <h2>Torres 10</h2>
         <p>Un brandy añejo con carácter y sabor intenso.</p>
         <p class="price">$470.00</p>
