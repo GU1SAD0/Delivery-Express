@@ -9,26 +9,25 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
         }
         header {
             background: #1a1a1a;
             color: #ffd700;
+            padding: 20px 0;
             text-align: center;
-            padding: 20px;
             border-bottom: 2px solid #ffd700;
         }
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 28px;
+            font-size: 36px;
         }
         header nav ul {
             list-style: none;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
         header nav ul li a {
             text-decoration: none;
@@ -39,90 +38,107 @@
         header nav ul li a:hover {
             color: #fff;
         }
-        section {
-            padding: 20px;
+        .slogan {
+            margin: 10px 0;
+            font-style: italic;
         }
-        .product-section h2, .offers h2, .contact-section h2 {
+        .product-section {
+            background: #2a2a2a;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .product-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-size: 28px;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        .offers {
+            background: #f5f5f5;
             color: #333;
+            padding: 40px 20px;
             text-align: center;
-            margin-bottom: 15px;
         }
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+        .offers h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
         }
-        .product {
+        .contact-section {
+            background: #333;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        .product, .offer-card {
             background: #fff;
-            border: 1px solid #ddd;
+            margin: 15px auto;
+            padding: 20px;
             border-radius: 10px;
-            padding: 15px;
-            max-width: 200px;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            display: inline-block;
+            color: #333;
         }
-        .product img {
+        .product img, .offer-card img {
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
             margin-bottom: 10px;
-        }
-        .product h3 {
-            font-size: 18px;
-            color: #333;
-            margin-bottom: 10px;
-        }
-        .product p {
-            font-size: 14px;
-            margin: 5px 0;
         }
         .price {
-            font-size: 16px;
-            color: #ff5722;
-            font-weight: bold;
+            font-size: 20px;
+            color: #333;
+            margin: 10px 0;
         }
-        .button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 12px;
+        .button, .contact-button {
             background: #ffd700;
             color: #000;
             border: none;
-            border-radius: 5px;
-            font-size: 14px;
+            padding: 10px 20px;
+            text-transform: uppercase;
             font-weight: bold;
-            text-decoration: none;
+            cursor: pointer;
             transition: background 0.3s ease;
+            text-decoration: none;
         }
-        .button:hover {
-            background: #ffcc33;
+        .button:hover, .contact-button:hover {
+            background: #fff;
         }
         footer {
             background: #1a1a1a;
-            color: #fff;
             text-align: center;
             padding: 10px 0;
-            font-size: 14px;
+            border-top: 2px solid #ffd700;
+            color: #fff;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Delivery Express</h1>
-    <nav>
-        <ul>
-            <li><a href="#vinos">Vinos</a></li>
-            <li><a href="#licores">Licores</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <h1>Delivery Express</h1>
+        <p class="slogan">Vinos y licores a tu puerta, cuando más los necesitas.</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#vinos">Vinos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-   <section id="vinos" class="product-section">
+    <section id="vinos" class="product-section">
         <h2>Explora Nuestra Selección de Vinos</h2>
         <div class="product">
             <img src="vino-tinto.jpg" alt="Vino Tinto">
@@ -261,16 +277,18 @@
             <button class="button">Comprar</button>
         </div>
     </section>
+    
 
-<section id="contacto" class="contact-section">
-    <h2>Contacto</h2>
-    <p>Para pedidos o más información, contáctanos al:</p>
-    <p>Teléfono y WhatsApp: <a href="https://wa.me/523325905963" class="button">3325905963</a></p>
-</section>
+    <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <p>Para pedidos o más información, contáctanos al:</p>
+        <p class="highlight">Teléfono y WhatsApp: 3325905963</p>
+        <a href="https://wa.me/523325905963" class="contact-button" target="_blank">Escríbenos por WhatsApp</a>
+    </section>
 
-<footer>
-    <p>&copy; 2024 Delivery Express. Todos los derechos reservados.</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Delivery Express. Todos los derechos reservados.</p>
+    </footer>
 
 </body>
 </html>
