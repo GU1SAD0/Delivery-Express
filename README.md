@@ -9,7 +9,7 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f8f9fa;
+            background-color: #f5f5f5;
             color: #333;
         }
         header {
@@ -17,78 +17,88 @@
             color: #ffd700;
             text-align: center;
             padding: 20px;
+            border-bottom: 2px solid #ffd700;
         }
         header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            margin: 0;
-        }
-        header p {
-            font-size: 14px;
-            margin: 5px 0 15px;
+            font-size: 28px;
         }
         header nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-        }
-        header nav ul li {
-            margin: 0 10px;
+            gap: 15px;
         }
         header nav ul li a {
             text-decoration: none;
             color: #ffd700;
             font-weight: bold;
-            font-size: 14px;
+            transition: color 0.3s ease;
         }
         header nav ul li a:hover {
             color: #fff;
         }
-        .product-section, .offers, .contact-section {
+        section {
             padding: 20px;
-            text-align: center;
         }
         .product-section h2, .offers h2, .contact-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
             margin-bottom: 15px;
-            color: #1a1a1a;
         }
-        .product, .offer-card {
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
             background: #fff;
+            border: 1px solid #ddd;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 15px auto;
             padding: 15px;
-            width: 90%;
-            max-width: 300px;
+            max-width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .product img, .offer-card img {
+        .product img {
             max-width: 100%;
-            border-radius: 8px;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .product h3 {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .product p {
+            font-size: 14px;
+            margin: 5px 0;
         }
         .price {
-            font-size: 18px;
+            font-size: 16px;
+            color: #ff5722;
             font-weight: bold;
-            margin: 10px 0;
         }
-        .button, .contact-button {
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
             background: #ffd700;
             color: #000;
             border: none;
-            padding: 10px;
-            font-size: 16px;
             border-radius: 5px;
-            cursor: pointer;
-            display: inline-block;
+            font-size: 14px;
+            font-weight: bold;
             text-decoration: none;
-            margin-top: 10px;
+            transition: background 0.3s ease;
         }
-        .button:hover, .contact-button:hover {
-            background: #e6c200;
+        .button:hover {
+            background: #ffcc33;
         }
         footer {
             background: #1a1a1a;
@@ -97,75 +107,55 @@
             padding: 10px 0;
             font-size: 14px;
         }
-        /* Media Queries */
-        @media (min-width: 768px) {
-            header h1 {
-                font-size: 36px;
-            }
-            .product, .offer-card {
-                width: 45%;
-                margin: 15px;
-                display: inline-block;
-            }
-        }
-        @media (min-width: 1024px) {
-            .product, .offer-card {
-                width: 30%;
-            }
-        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Delivery Express</h1>
-        <p>Vinos y licores a tu puerta, cuando más los necesitas.</p>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#vinos">Vinos</a></li>
-                <li><a href="#ofertas">Ofertas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="vinos" class="product-section">
-        <h2>Explora Nuestra Selección de Vinos</h2>
+<header>
+    <h1>Delivery Express</h1>
+    <nav>
+        <ul>
+            <li><a href="#vinos">Vinos</a></li>
+            <li><a href="#licores">Licores</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="licores" class="product-section">
+    <h2>Nuestros Licores</h2>
+    <div class="product-container">
         <div class="product">
-            <img src="vino-tinto.jpg" alt="Vino Tinto">
-            <h3>Vino Tinto Reserva</h3>
-            <p>Un exquisito vino tinto con notas de frutas rojas.</p>
-            <p class="price">$250.00</p>
-            <button class="button">Comprar</button>
+            <img src="brandy-torres10.jpg" alt="Torres 10">
+            <h3>Torres 10</h3>
+            <p>Brandy añejo</p>
+            <p class="price">$470.00</p>
         </div>
         <div class="product">
-            <img src="vino-blanco.jpg" alt="Vino Blanco">
-            <h3>Vino Blanco Chardonnay</h3>
-            <p>Un fresco vino blanco ideal para acompañar mariscos.</p>
-            <p class="price">$180.00</p>
-            <button class="button">Comprar</button>
+            <img src="bacardi-blanco.jpg" alt="Bacardi Blanco">
+            <h3>Bacardi Blanco</h3>
+            <p>Ron clásico</p>
+            <p class="price">$390.00</p>
         </div>
-    </section>
-
-    <section id="ofertas" class="offers">
-        <h2>Ofertas Especiales</h2>
-        <div class="offer-card">
-            <img src="champagne.jpg" alt="Champagne">
-            <h3>Champagne Brut</h3>
-            <p>¡20% de descuento por tiempo limitado!</p>
-            <p class="price">Antes: $650.00 Ahora: $520.00</p>
+        <div class="product">
+            <img src="matusalem-platino.jpg" alt="Matusalem Platino">
+            <h3>Matusalem Platino</h3>
+            <p>Ron premium</p>
+            <p class="price">$1,550.00</p>
         </div>
-    </section>
+        <!-- Agregar más productos siguiendo el mismo patrón -->
+    </div>
+</section>
 
-    <section id="contacto" class="contact-section">
-        <h2>Contacto</h2>
-        <p>Para pedidos o más información, contáctanos al:</p>
-        <p><strong>Teléfono y WhatsApp: 3325905963</strong></p>
-        <a href="https://wa.me/523325905963" class="contact-button" target="_blank">Escríbenos por WhatsApp</a>
-    </section>
+<section id="contacto" class="contact-section">
+    <h2>Contacto</h2>
+    <p>Para pedidos o más información, contáctanos al:</p>
+    <p>Teléfono y WhatsApp: <a href="https://wa.me/523325905963" class="button">3325905963</a></p>
+</section>
 
-    <footer>
-        <p>&copy; 2024 Delivery Express. Todos los derechos reservados.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 Delivery Express. Todos los derechos reservados.</p>
+</footer>
+
 </body>
 </html>
