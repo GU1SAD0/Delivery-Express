@@ -171,7 +171,7 @@
     
         <h3>Brandy</h3>
         <div class="product">
-            <img src="brandy-torres10.jpg" alt="Torres 10">
+            <img src="https://vinotecamx.vtexassets.com/arquivos/ids/1346873/B4017-Vinoteca-Brandy-Torres-10-Anos-700Ml-003.jpg?v=638646768118670000" alt="Torres 10">
             <h2>Torres 10</h2>
             <p>Un brandy añejo con carácter y sabor intenso.</p>
             <p class="price">$470.00</p>
