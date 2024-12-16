@@ -147,6 +147,7 @@
             <h2>Vino Tinto Reserva</h2>
             <p>Un exquisito vino tinto con notas de frutas rojas.</p>
             <p class="price">$250.00</p>
+            <a href="https://wa.me/523325905963?text=Hola%2C%20buenas%20tardes%20quiero%20comprar%20Vino%20Tinto%20Reserva%20por%20favor" class="button">Comprar</a>
             <button class="button">Comprar</button>
         </div>
         <div class="product">
