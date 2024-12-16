@@ -9,13 +9,15 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f5f5dc; /* Blanco crema */
+            color: #333; /* Color oscuro para texto */
         }
         header {
-            background: #1a1a1a;
-            color: #ffd700;
+            background-color: #fff8dc; /* Crema claro */
+            color: #6b4226; /* Café oscuro */
             padding: 20px 0;
             text-align: center;
-            border-bottom: 2px solid #ffd700;
+            border-bottom: 2px solid #6b4226;
         }
         header h1 {
             font-family: 'Playfair Display', serif;
@@ -31,51 +33,37 @@
         }
         header nav ul li a {
             text-decoration: none;
-            color: #ffd700;
+            color: #6b4226;
             font-weight: bold;
             transition: color 0.3s ease;
         }
         header nav ul li a:hover {
-            color: #fff;
+            color: #333;
         }
         .slogan {
             margin: 10px 0;
             font-style: italic;
         }
         .product-section {
-            background: #2a2a2a;
-            color: #fff;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
         }
         .product-section h2 {
             font-family: 'Playfair Display', serif;
             font-size: 28px;
-            color: #ffd700;
+            color: #6b4226;
             margin-bottom: 20px;
         }
         .offers {
-            background: #f5f5f5;
+            background: #fff8dc; /* Fondo crema claro */
             color: #333;
-            padding: 40px 20px;
+            padding: 20px;
             text-align: center;
         }
         .offers h2 {
             font-family: 'Playfair Display', serif;
             font-size: 28px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .contact-section {
-            background: #333;
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .contact-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: #ffd700;
+            color: #6b4226;
             margin-bottom: 20px;
         }
         .product, .offer-card {
@@ -83,23 +71,25 @@
             margin: 15px auto;
             padding: 20px;
             border-radius: 10px;
-            width: 250px;
-            display: inline-block;
+            width: calc(100% - 40px);
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             color: #333;
         }
         .product img, .offer-card img {
             max-width: 100%;
             height: auto;
             margin-bottom: 10px;
+            border-radius: 10px;
         }
         .price {
             font-size: 20px;
-            color: #333;
+            color: #6b4226;
             margin: 10px 0;
         }
         .button, .contact-button {
-            background: #ffd700;
-            color: #000;
+            background: #6b4226; /* Café oscuro */
+            color: #fff;
             border: none;
             padding: 10px 20px;
             text-transform: uppercase;
@@ -107,19 +97,31 @@
             cursor: pointer;
             transition: background 0.3s ease;
             text-decoration: none;
+            border-radius: 5px;
         }
         .button:hover, .contact-button:hover {
-            background: #fff;
+            background: #333;
         }
         footer {
-            background: #1a1a1a;
+            background-color: #fff8dc; /* Fondo crema claro */
             text-align: center;
             padding: 10px 0;
-            border-top: 2px solid #ffd700;
-            color: #fff;
+            border-top: 2px solid #6b4226;
+            color: #6b4226;
         }
         footer p {
             margin: 0;
+        }
+        @media screen and (min-width: 768px) {
+            .product-section, .offers {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .product, .offer-card {
+                max-width: 300px;
+            }
         }
     </style>
 </head>
