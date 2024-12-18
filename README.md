@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -14,7 +13,38 @@
             background-color: #f5f5dc;
             color: #333;
         }
+        button {
+    background-color: #6b4226; /* Color de fondo marrón */
+    color: #fff;             /* Texto blanco */
+    border: none;            /* Sin bordes */
+    border-radius: 5px;      /* Bordes redondeados */
+    padding: 10px 20px;      /* Espaciado interno */
+    font-size: 16px;         /* Tamaño de fuente */
+    cursor: pointer;         /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Efecto de transición en hover */
+}
+button,
+a.button {
+    background-color: #6b4226; /* Color marrón */
+    color: #fff;             /* Texto blanco */
+    border: none;            /* Sin bordes */
+    border-radius: 5px;      /* Bordes redondeados */
+    padding: 10px 20px;      /* Espaciado interno */
+    font-size: 16px;         /* Tamaño de fuente */
+    text-align: center;      /* Centrar texto */
+    text-decoration: none;   /* Quita el subrayado de los enlaces */
+    cursor: pointer;         /* Cursor de mano al pasar */
+    display: inline-block;   /* Asegura un comportamiento tipo botón */
+    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse */
+}
 
+button:hover,
+a.button:hover {
+    background-color: #333; /* Oscurece el color al pasar el mouse */
+}
+button:hover {
+    background-color: #333; /* Cambia a color más oscuro al pasar el mouse */
+}
         header {
             background-color: #fff8dc;
             color: #6b4226;
@@ -123,6 +153,7 @@
             border-bottom: 2px solid #6b4226;
             font-size: 16px;
         }
+        
     </style>
     <script>
         // Verificar edad
