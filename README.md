@@ -293,12 +293,6 @@
     </style>
         </head>
         <body>
-        
-            <div>
-                <h1>Bienvenido a mi página web</h1>
-                <p>Este es un contenido que estará bloqueado hasta que se responda la pregunta.</p>
-            </div>
-        
             <!-- El overlay con la pregunta -->
             <div id="overlay">
                 <div id="age-check">
