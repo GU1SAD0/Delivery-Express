@@ -5,145 +5,76 @@
     <title>Vinos y Licores - Delivery Express</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* Estilos generales */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5dc;
-            color: #333;
+            background-color: #f5f5dc; /* Blanco crema */
+            color: #333; /* Color oscuro para texto */
         }
-        button {
-    background-color: #6b4226; /* Color de fondo marrón */
-    color: #fff;             /* Texto blanco */
-    border: none;            /* Sin bordes */
-    border-radius: 5px;      /* Bordes redondeados */
-    padding: 10px 20px;      /* Espaciado interno */
-    font-size: 16px;         /* Tamaño de fuente */
-    cursor: pointer;         /* Cambia el cursor al pasar el mouse */
-    transition: background-color 0.3s ease; /* Efecto de transición en hover */
-}
-button,
-a.button {
-    background-color: #6b4226; /* Color marrón */
-    color: #fff;             /* Texto blanco */
-    border: none;            /* Sin bordes */
-    border-radius: 5px;      /* Bordes redondeados */
-    padding: 10px 20px;      /* Espaciado interno */
-    font-size: 16px;         /* Tamaño de fuente */
-    text-align: center;      /* Centrar texto */
-    text-decoration: none;   /* Quita el subrayado de los enlaces */
-    cursor: pointer;         /* Cursor de mano al pasar */
-    display: inline-block;   /* Asegura un comportamiento tipo botón */
-    transition: background-color 0.3s ease; /* Efecto de transición al pasar el mouse */
-}
-
-button:hover,
-a.button:hover {
-    background-color: #333; /* Oscurece el color al pasar el mouse */
-}
-button:hover {
-    background-color: #333; /* Cambia a color más oscuro al pasar el mouse */
-}
         header {
-            background-color: #fff8dc;
-            color: #6b4226;
+            background-color: #fff8dc; /* Crema claro */
+            color: #6b4226; /* Café oscuro */
             padding: 20px 0;
             text-align: center;
             border-bottom: 2px solid #6b4226;
         }
-
         header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 36px;
         }
-
-        header .slogan {
-            font-style: italic;
-            margin-bottom: 10px;
-        }
-
         header nav ul {
             list-style: none;
             padding: 0;
-            margin: 0;
         }
-
         header nav ul li {
             display: inline;
             margin: 0 15px;
         }
-
         header nav ul li a {
             text-decoration: none;
             color: #6b4226;
             font-weight: bold;
             transition: color 0.3s ease;
         }
-
         header nav ul li a:hover {
             color: #333;
         }
-
+        .slogan {
+            margin: 10px 0;
+            font-style: italic;
+        }
         .product-section {
             padding: 20px;
             text-align: center;
         }
-
         .product-section h2 {
             font-family: 'Playfair Display', serif;
             font-size: 28px;
             color: #6b4226;
             margin-bottom: 20px;
         }
-        .product img {
-        width: 100%;
-        height: auto;
-        max-width: 300px; /* Limita el ancho máximo */
-        display: block;
-        margin: 0 auto;
-    }
 
-        /* Diálogo de verificación */
-        #age-dialog {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
-        }
+/* Diálogo de verificación */
+#age-dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
 
-        #age-dialog h1 {
-            margin-bottom: 20px;
-        }
-
-        #age-dialog button {
-            margin: 10px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        #age-dialog button.yes {
-            background-color: #28a745;
-            color: #fff;
-        }
-
-        #age-dialog button.no {
-            background-color: #dc3545;
-            color: #fff;
-        }
-
-        /* Aviso de precios */
+#age-dialog h1 {
+    margin-bottom: 20px;
+}
+/* Aviso de precios */
         .price-notice {
             background-color: #fff8dc;
             color: #6b4226;
@@ -153,38 +84,97 @@ button:hover {
             border-bottom: 2px solid #6b4226;
             font-size: 16px;
         }
-        
-    </style>
-    <script>
-        // Verificar edad
-        function checkAge(isAdult) {
-            const dialog = document.getElementById('age-dialog');
-            if (isAdult) {
-                dialog.style.display = 'none';
-            } else {
-                window.location.href = "https://google.com"; // Redirigir si es menor de edad
+#age-dialog button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#age-dialog button.yes {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#age-dialog button.no {
+    background-color: #dc3545;
+    color: #fff;
+}
+        .offers {
+            background: #fff8dc; /* Fondo crema claro */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        .offers h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            color: #6b4226;
+            margin-bottom: 20px;
+        }
+        .product, .offer-card {
+            background: #fff;
+            margin: 15px auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(100% - 40px);
+            max-width: 300px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .product img, .offer-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .price {
+            font-size: 20px;
+            color: #6b4226;
+            margin: 10px 0;
+        }
+        .button, .contact-button {
+            background: #6b4226; /* Café oscuro */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover, .contact-button:hover {
+            background: #333;
+        }
+        footer {
+            background-color: #fff8dc; /* Fondo crema claro */
+            text-align: center;
+            padding: 10px 0;
+            border-top: 2px solid #6b4226;
+            color: #6b4226;
+        }
+        footer p {
+            margin: 0;
+        }
+        @media screen and (min-width: 768px) {
+            .product-section, .offers {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .product, .offer-card {
+                max-width: 300px;
             }
         }
-
-        // Mostrar aviso en pedidos después de las 11 pm
-        document.addEventListener('DOMContentLoaded', () => {
-            const now = new Date();
-            const notice = document.querySelector('.price-notice');
-            if (now.getHours() >= 23) {
-                notice.textContent = 'Pedidos realizados después de las 11 PM tendrán un aumento del 20% en los precios.';
-            }
-        });
-    </script>
+    </style>
 </head>
 <body>
-    <!-- Diálogo de edad -->
-    <div id="age-dialog">
-        <h1>¿Eres mayor de edad?</h1>
-        <button class="yes" onclick="checkAge(true)">Sí</button>
-        <button class="no" onclick="checkAge(false)">No</button>
-    </div>
 
-    <!-- Contenido de la página -->
     <header>
         <h1>Delivery Express</h1>
         <p class="slogan">Vinos y licores a tu puerta, cuando más los necesitas.</p>
@@ -197,12 +187,6 @@ button:hover {
             </ul>
         </nav>
     </header>
-
-        <!-- Aviso de precios -->
-        <div class="price-notice">
-            <!-- Este texto se actualiza dinámicamente -->
-        </div>
-    
 
     <section id="vinos" class="product-section">
         <h2>Explora Nuestra Selección de Vinos</h2>
