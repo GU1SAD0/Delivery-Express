@@ -408,7 +408,7 @@
             <h2>Dobel blanco</h2>
             <p>Tequila ultra premium (750 ml).</p>
             <p class="price">$750</p>
-            <button class="button" onclick="window.location.href='https://maestrodobel.com.mx/wp-content/uploads/blanco_botella.png">Comprar</button>
+            <button class="button" onclick="window.location.href='https://wa.me/523325905963?text=Hola,%20buenas%20tardes%20quiero%20comprar%20Dobel%20Blanco'">Comprar</button>
         </div>
 
         <h3>Whisky</h3>
