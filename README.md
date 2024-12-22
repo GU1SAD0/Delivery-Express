@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -9,315 +10,183 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5dc; /* Blanco crema */
-            color: #333; /* Color oscuro para texto */
+            background-color: #f5f5dc;
+            color: #333;
         }
-         #age-dialog {
+
+        header {
+            background-color: #fff8dc;
+            color: #6b4226;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #6b4226;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        nav {
+            display: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 10px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #6b4226;
+            font-weight: bold;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #6b4226;
+            color: #fff;
+        }
+
+        .menu-btn {
+            font-size: 24px;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+
+        .menu-btn:focus {
+            outline: none;
+        }
+
+        .menu-open nav {
+            display: block;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
             background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            color: white;
+            height: 100%;
             z-index: 1000;
-        }
-        #age-dialog button {
-            margin: 10px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            cursor: pointer;
-        }
-        #age-dialog button.yes {
-            background-color: #28a745;
-            color: #fff;
-        }
-        #age-dialog button.no {
-            background-color: #dc3545;
-            color: #fff;
-        }
-        header {
-            background-color: #fff8dc; /* Crema claro */
-            color: #6b4226; /* Café oscuro */
-            padding: 20px 0;
+            padding-top: 50px;
+            box-sizing: border-box;
             text-align: center;
-            border-bottom: 2px solid #6b4226;
         }
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
+
+        main {
+            padding: 20px;
         }
-        header nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        header nav ul li a {
-            text-decoration: none;
-            color: #6b4226;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        header nav ul li a:hover {
-            color: #333;
-        }
-        .slogan {
-            margin: 10px 0;
-            font-style: italic;
-        }
+
         .product-section {
-            padding: 20px;
-            text-align: center;
-        }
-        .product-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: #6b4226;
-            margin-bottom: 20px;
+            display: grid;
+            gap: 20px;
         }
 
-/* Diálogo de verificación */
-#age-dialog {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-#age-dialog h1 {
-    margin-bottom: 20px;
-}
-/* Aviso de precios */
-        .price-notice {
-            background-color: #fff8dc;
-            color: #6b4226;
-            padding: 10px;
-            text-align: center;
-            border-top: 2px solid #6b4226;
-            border-bottom: 2px solid #6b4226;
-            font-size: 16px;
-        }
-#age-dialog button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-}
-
-#age-dialog button.yes {
-    background-color: #28a745;
-    color: #fff;
-}
-
-#age-dialog button.no {
-    background-color: #dc3545;
-    color: #fff;
-}
-        .offers {
-            background: #fff8dc; /* Fondo crema claro */
-            color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        .offers h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: #6b4226;
-            margin-bottom: 20px;
-        }
-        .product, .offer-card {
+        .product {
             background: #fff;
-            margin: 15px auto;
-            padding: 20px;
+            margin: auto;
             border-radius: 10px;
-            width: calc(100% - 40px);
-            max-width: 300px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            color: #333;
+            text-align: center;
+            padding: 15px;
+            max-width: 300px;
         }
-        .product img, .offer-card img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
+
+        .product img {
+            width: 100%;
             border-radius: 10px;
         }
-        .price {
+
+        .product h2 {
             font-size: 20px;
+            margin: 10px 0;
+            color: #6b4226;
+        }
+
+        .product .price {
+            font-size: 18px;
             color: #6b4226;
             margin: 10px 0;
         }
-        .button, .contact-button {
-            background: #6b4226; /* Café oscuro */
-            color: #fff;
+
+        .button {
+            background-color: #6b4226;
+            color: white;
             border: none;
-            padding: 10px 20px;
-            text-transform: uppercase;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            text-decoration: none;
+            padding: 10px;
             border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-        .button:hover, .contact-button:hover {
-            background: #333;
+
+        .button:hover {
+            background-color: #333;
         }
+
         footer {
-            background-color: #fff8dc; /* Fondo crema claro */
+            background-color: #fff8dc;
             text-align: center;
             padding: 10px 0;
             border-top: 2px solid #6b4226;
             color: #6b4226;
         }
-        footer p {
-            margin: 0;
+
+        footer a {
+            color: #6b4226;
+            text-decoration: none;
+            font-weight: bold;
         }
-        @media screen and (min-width: 768px) {
-            .product-section, .offers {
+
+        @media (min-width: 768px) {
+            header nav {
                 display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
+                justify-content: flex-end;
             }
-            .product, .offer-card {
-                max-width: 300px;
+
+            nav ul {
+                display: flex;
+                gap: 15px;
+            }
+
+            nav ul li {
+                margin: 0;
+            }
+
+            nav ul li a {
+                padding: 0;
+                margin: 0;
+            }
+
+            .menu-btn {
+                display: none;
+            }
+
+            .menu-open nav {
+                display: none;
+            }
+
+            .product-section {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             }
         }
-        
     </style>
 </head>
 <body>
-    <html lang="es">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Página de Verificación</title>
-            <style>
-                #age-check {
-                    position: fixed;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    background-color: rgba(0, 0, 0, 0.7);
-                    color: white;
-                    padding: 20px;
-                    border-radius: 10px;
-                    text-align: center;
-                    font-size: 20px;
-                    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-                    z-index: 9999;
-                }
-                .btn {
-                    margin: 10px;
-                    padding: 10px 20px;
-                    font-size: 16px;
-                    border: none;
-                    cursor: pointer;
-                    border-radius: 5px;
-                }
-                .btn-yes {
-                    background-color: green;
-                    color: white;
-                }
-                .btn-no {
-                    background-color: red;
-                    color: white;
-                }
-                        /* Estilos del overlay (bloquea toda la página) */
-        #overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
-            z-index: 9998; /* Asegura que esté encima de todo el contenido */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Estilo del mensaje en pantalla */
-        #age-check {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-            font-size: 20px;
-            box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
-        }
-
-        .btn {
-            margin: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        .btn-yes {
-            background-color: green;
-            color: white;
-        }
-
-        .btn-no {
-            background-color: red;
-            color: white;
-        }
-
-        /* Este estilo asegura que la página no sea accesible hasta que el usuario responda */
-        body {
-            overflow: hidden; /* Bloquea el desplazamiento de la página */
-        }
-
-    </style>
-        </head>
-        <body>
-            <!-- El overlay con la pregunta -->
-            <div id="overlay">
-                <div id="age-check">
-                    <p>¿Eres mayor de 18 años?</p>
-                    <button class="btn btn-yes" onclick="checkAge(true)">Sí</button>
-                    <button class="btn btn-no" onclick="checkAge(false)">No</button>
-                </div>
-            </div>
-        
-            <script>
-                function checkAge(isAdult) {
-                    if (isAdult) {
-                        // Si es mayor de edad, cierra el aviso y desbloquea la página.
-                        document.getElementById("overlay").style.display = "none"; // Ocultar el mensaje
-                        document.body.style.overflow = "auto"; // Desbloquear el desplazamiento de la página
-                    } else {
-                        // Si no es mayor de edad, redirige a otro lugar (puedes cambiar la URL)
-                        window.location.href = "https://www.google.com";  // Cambia este enlace a otro si lo prefieres
-                    }
-                }
-            </script>
-        
     <header>
         <h1>Delivery Express</h1>
-        <p class="slogan">Vinos y licores a tu puerta, cuando más los necesitas.</p>
+        <button class="menu-btn" onclick="document.body.classList.toggle('menu-open')">☰</button>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
@@ -327,6 +196,8 @@
             </ul>
         </nav>
     </header>
+
+    <main>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const now = new Date(); // Fecha y hora actual
