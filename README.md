@@ -346,15 +346,16 @@
             <h2>Vino Tinto Syrah Viña Maipo </h2>
             <p>Delicioso sabor suave, de color rubí y tonos violeta.</p>
             <p class="price">$150.00</p>
-            <a href="https://wa.me/523325905963?text=Hola%2C%20buenas%20tardes%20quiero%20comprar%20Vino%20Tinto%20Reserva%20por%20favor" class="button">Comprar</a>
+            <a href="https://wa.me/523325905963?text=Hola%2C%20buenas%20tardes%20quiero%20comprar%20Vino%20Tinto%20Reserva" class="button">Comprar</a>
         </div>
         <div class="product">
-<img src="2wCEAAkGBxAQEBEQDxAPEBEPEhAQDw8OEBAQDhAPFRIWFxURFRUYHCggGBolGxMWITEiJSstLjouGCAzODUsOCgtLisBCgoKDg0OGxAQGy4lHyUtLS0tLSs3NTgtLS0tLS8tKy0tLS0tLS0tLS03LS8tLS0rLS0tLS0tKy0tLS0tLS0tLf" alt="Vino Blanco">
-            <h2>Vino Blanco Viña Maipo</h2>
-            <p>Un fresco vino blanco chileno.</p>
+            <img src="2wCEAAkGBxISDxUSEBAQEBAQEhIQDxASEBASEBAQFxUXFhUVExMYHSggGBslHRUVITEhJSkrLi86FyIzODMtNygtOisBCgoKDg0OGhAQFS0mHyYtMC8tNS0tLS0tLTEtKysrLSstLS0tLS0rLSstNy01LS0tLS0tLS0tKy0tLS0rLS0tLf">
+            <h2>Vino Blanco Viña Maipo </h2>
+            <p>Delicioso, refrescante y perfecto para cocteles.</p>
             <p class="price">$150.00</p>
-            <button class="button" onclick="window.location.href='https://wa.me/523325905963?text=Hola,%20buenas%20tardes%20quiero%20comprar%20Vino%20Blanco%20Chardonnay'">Comprar</button>
+            <a href="https://wa.me/523325905963?text=Hola%2C%20buenas%20tardes%20quiero%20comprar%20Vino%20Blanco%20Maipo" class="button">Comprar</a>
         </div>
+
     </section>
     
     <section id="ofertas" class="offers">
