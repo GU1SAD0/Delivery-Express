@@ -342,7 +342,7 @@
     <section id="vinos" class="product-section">
         <h2>Explora Nuestra Selección de Vinos</h2>
         <div class="product">
-            <img src="https://static.wixstatic.com/media/b71e33_1c1ee38ae0f24fffb10f1e8f0ef484b4~mv2.png/v1/fit/w_500,h_500,q_90/file.png">
+            <img src="https://oasisvinosylicores.com/wp-content/uploads/2024/06/Img-W-15.png">
             <h2>Vino Tinto Syrah Viña Maipo </h2>
             <p>Delicioso sabor suave, de color rubí y tonos violeta.</p>
             <p class="price">$150.00</p>
