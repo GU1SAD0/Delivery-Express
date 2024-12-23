@@ -430,7 +430,7 @@
             <button class="button" onclick="window.location.href='https://wa.me/523325905963?text=Hola,%20buenas%20tardes%20quiero%20comprar%20Etiqueta%20Negra'">Comprar</button>
         </div>
         <div class="product">
-<img src="2wCEAAkGBxITEhMREhMSFRIWFxgaGBYXEhgZGBoTFRgWFxcYGx8ZICggGBolHRUWITMhJykrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICYtLS0tLi8yLS0tLS0tLTUtLS0tNzUtNS0vNSstLS0tLS01LS0tLS01LS0tLS0tLS0tLf">
+            <img src="2wCEAAkGBxITEhMREhMSFRIWFxgaGBYXEhgZGBoTFRgWFxcYGx8ZICggGBolHRUWITMhJykrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGy0mICYtLS0tLi8yLS0tLS0tLTUtLS0tNzUtNS0vNSstLS0tLS01LS0tLS01LS0tLS0tLS0tLf">
             <h2>Jack Daniels (Jack Daniels)</h2>
             <p>Un whisky premium ( 1 L).</p>
             <p class="price">$750.00</p>
